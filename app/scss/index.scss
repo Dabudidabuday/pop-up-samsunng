@@ -1,0 +1,26 @@
+.pop-up {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px 60px 32px 51px;
+    width: 709px;
+    height: 484px;
+
+    background: radial-gradient(107.97% 452.31% at -18.55% 54.21%, #29989F 0%, #044549 100%);
+}
+
+.pop-up__discount-type {
+    display: flex;
+    align-items: center;
+}
+
+.pop-up__discount-img {
+    margin-right: 13px;
+    margin-left: 10px;
+}
+
+
+.brand-name {
+    display: flex;
+    
+}
