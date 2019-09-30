@@ -1,26 +1,111 @@
+@import 'reset.scss';
+
+
+
+
 .pop-up {
-    position: absolute;
-    left: 0;
-    top: 0;
     padding: 20px 60px 32px 51px;
     width: 709px;
     height: 484px;
-
     background: radial-gradient(107.97% 452.31% at -18.55% 54.21%, #29989F 0%, #044549 100%);
 }
 
-.pop-up__discount-type {
+.pop-up__header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+
+    .pop-up__discount-type {
+        display: flex;
+        align-items: center;
+    }
+
+    .pop-up__discount-img {
+        margin-right: 13px;
+        margin-left: 10px;
+    }
+
+
+    .brand-name {
+        display: flex;
+    }
 }
 
-.pop-up__discount-img {
-    margin-right: 13px;
-    margin-left: 10px;
-}
-
-
-.brand-name {
+.pop-up__content {
     display: flex;
-    
+
+
+    .pop-up__product-img {
+        margin-top: 23px;
+    }
+}
+
+.pop-up__description {
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+.pop-up__instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+
+    .pop-up__instructions-border {
+        margin-top: 4px;
+        margin-bottom: 9px;
+        height: 1px;
+        width: 258px;
+        background-color: #c4c4c4;
+
+    }
+}
+
+.pop-up__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pop-up__input-text {
+        margin-bottom: 12px;
+        padding: 15px 68px;
+        text-align: center;
+        width: 258px;
+        height: 48px;
+        font-size: 15px;
+        background-color: transparent;
+        box-sizing: border-box;
+        border: 2px solid #659497;
+        border-radius: 8px;
+    }
+
+    .pop-up__input-tel {
+        padding: 15px 68px;
+        margin-bottom: 12px;
+        width: 258px;
+        height: 48px;
+        font-size: 15px;
+        background-color: transparent;
+        box-sizing: border-box;
+        border: 2px solid #659497;
+        border-radius: 8px;
+    }
+
+    input[type="submit"] {
+        display: flex;
+        padding: 11px 44px 14px 45px;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        background-color: #FF680A;
+        border: none;
+        border-radius: 8px;
+        box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+    }
 }
