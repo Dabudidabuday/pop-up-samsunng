@@ -1,11 +1,32 @@
 @media screen and (max-width: 804px) {
     .pop-up {
-        padding: 32px;
+        padding: 15px 10px 32px 10px;
         width: 396px;
         height: auto;
     }
 
+    .pop-up__header {
+        align-items: flex-start;
+    }
+
+    .pop-up__discount-type {
+        flex-direction: column;
+
+    }
+
+    .brand-name {
+        width: 49px;
+        height: 8px;
+    }
+
     .pop-up__content {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pop-up__product-img {
+
+        height: 156px;
+        overflow: hidden;
     }
 }
