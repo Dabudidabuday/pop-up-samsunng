@@ -1,13 +1,10 @@
 @import 'reset.scss';
 
-
-
-
 .pop-up {
     position: relative;
-    margin: 20px;
+    margin: 50px auto;
     padding: 20px 60px 32px 51px;
-    width: 709px;
+    max-width: 709px;
     height: 484px;
     background: radial-gradient(107.97% 452.31% at -18.55% 54.21%, #29989F 0%, #044549 100%);
     box-sizing: border-box;
@@ -27,7 +24,6 @@
         margin-right: 13px;
         margin-left: 10px;
     }
-
 
     .brand-name {
         display: flex;
@@ -54,7 +50,6 @@
     margin-top: -10px;
 }
 
-
 .pop-up__instructions {
     display: flex;
     flex-direction: column;
@@ -69,9 +64,8 @@
         margin-top: 4px;
         margin-bottom: 9px;
         height: 1px;
-        width: 258px;
+        max-width: 258px;
         background-color: #c4c4c4;
-
     }
 }
 
@@ -84,7 +78,7 @@
         margin-bottom: 12px;
         padding: 15px 68px;
         text-align: center;
-        width: 258px;
+        max-width: 258px;
         height: 48px;
         font-size: 15px;
         background-color: transparent;
@@ -96,7 +90,7 @@
     .pop-up__input-tel {
         padding: 15px 68px;
         margin-bottom: 12px;
-        width: 258px;
+        max-width: 258px;
         height: 48px;
         font-size: 15px;
         background-color: transparent;
@@ -120,15 +114,4 @@
     }
 }
 
-@media screen and (max-width: 400px) {
-
-    .pop-up {
-        padding: 32px;
-        width: 396px;
-        height: 300px;
-    }
-
-    .pop-up__content {
-        flex-wrap: wrap;
-    }
-}
+@import 'mediaQueries.scss';
