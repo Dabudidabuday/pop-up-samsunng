@@ -4,10 +4,13 @@
 
 
 .pop-up {
+    position: relative;
+    margin: 20px;
     padding: 20px 60px 32px 51px;
     width: 709px;
     height: 484px;
     background: radial-gradient(107.97% 452.31% at -18.55% 54.21%, #29989F 0%, #044549 100%);
+    box-sizing: border-box;
 }
 
 .pop-up__header {
@@ -31,12 +34,18 @@
     }
 }
 
+.pop-up__close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+}
+
 .pop-up__content {
     display: flex;
 
-
     .pop-up__product-img {
         margin-top: 23px;
+        margin-right: 60px;
     }
 }
 
@@ -98,10 +107,11 @@
 
     input[type="submit"] {
         display: flex;
-        padding: 11px 44px 14px 45px;
+        padding: 11px 50px 14px 53px;
         align-items: center;
         text-align: center;
         font-size: 20px;
+        font-family: Arial, sans-serif;
         color: #fff;
         background-color: #FF680A;
         border: none;
