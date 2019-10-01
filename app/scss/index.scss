@@ -119,3 +119,16 @@
         box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.2);
     }
 }
+
+@media screen and (max-width: 400px) {
+
+    .pop-up {
+        padding: 32px;
+        width: 396px;
+        height: 300px;
+    }
+
+    .pop-up__content {
+        flex-wrap: wrap;
+    }
+}
